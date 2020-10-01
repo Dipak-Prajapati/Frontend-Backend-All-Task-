@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\INEXTURE\DAO\.metadata\.plugins\org.eclipse.jdt.core
+965372158.index
+722512300.index
+3288147116.index
+1504947925.index

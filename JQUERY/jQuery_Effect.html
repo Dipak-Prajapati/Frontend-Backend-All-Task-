@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect</title>
+	<link rel="stylesheet" type="text/css" href="jQuery_Effect.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*Hide Effect*/
+			$("#hide").click(function(){
+				$(".hsp").hide();
+			});
+			/*Show Effect*/
+			$("#show").click(function(){
+				$("p").show();
+			});
+			/*Toggle Effect*/
+			$("#toggle").click(function(){
+				$(".div1").toggle(1000);
+			});
+			/*FadeIn Effect*/
+			$("#fadeIn").click(function(){
+				$("#div1f").fadeIn();
+				$("#div2f").fadeIn("slow");
+				$("#div3f").fadeIn(3000);
+			});
+			/*Fade Out Effect*/
+			$("#fout").click(function(){
+				$("#div1f").fadeOut();
+				$("#div2f").fadeOut("slow");
+				$("#div3f").fadeOut(3000);
+			});
+			/*FadeIn And FadeOut Toggle Effect*/
+			$("#ftoggle").click(function(){
+				$("#div1f").fadeToggle();
+				$("#div2f").fadeToggle("slow");
+				$("#div3f").fadeToggle(3000);
+			});
+			/*FadeTo Effect*/
+			$("#fto").click(function(){
+				$("#div1ft").fadeTo(11,"0.3");
+				$("#div2ft").fadeTo("slow","0.5");
+				$("#div3ft").fadeTo("fast","0.7");
+			});
+			$("#ftohide").click(function(){
+				$("#div1ft,#div2ft,#div3ft").hide();
+			});
+			/*Slide Down Effect*/
+			$("#flip").click(function(){
+				$("#panel").slideDown(2000);
+			});
+			$("#stop").click(function(){
+				$("#panel").stop();
+			});
+			/*Slide Up Effect*/
+			$("#flip1").click(function(){
+				$("#panel1").slideUp("slow");
+			});
+			/*Slide TOgggle Effect*/
+			$("#flip2").click(function(){
+				$("#panel2").slideToggle("slow");
+			});
+			/*Animation Effect*/
+			$("#animate").click(function(){
+				$(".rect").animate({left:'450px',top:'500px'},"slow");
+			});
+			/*Delay Effect*/
+			$('#delay').click(function(){
+				$('.rect1').delay("slow").animate({left:'500px'},"slow");
+				$('.rect1').delay("slow").fadeOut();
+			});
+			$(".btn").click(function(){
+				$("<div>c</div>").appendTo(".a");
+			});
+		});
+	</script>
+</head>
+<body>
+	<p class="hsp">Hide Button Click Then i will hide and When Show Button click then i will show</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button><br>
+	<hr>
+	<div class="div1">
+		<p><b>This is a little poem: </b><br/>      
+			Twinkle, twinkle, little star<br/>      
+			How I wonder what you are<br/>      
+			Up above the world so high<br/>      
+			Like a diamond in the sky<br/>      
+			Twinkle, twinkle little star<br/>      
+			How I wonder what you are
+		</p>     
+	</div>
+	<button id="toggle">Toggle</button><br>
+	<hr>
+	<button id="fadeIn">Click to fade in boxes</button>&nbsp;
+	<button id="fout">Click TO Fade Out Boxes</button>&nbsp;
+	<button id="ftoggle">Click TO Toggle Boxes</button><br><br>  
+	<div id="div1f" style="width:80px;height:80px;display:none;background-color:red;"></div><br>  
+	<div id="div2f" style="width:80px;height:80px;display:none;background-color:green;"></div><br>  
+	<div id="div3f" style="width:80px;height:80px;display:none;background-color:blue;"></div>  
+	<hr>
+
+	<button id="fto">Click TO fade Box</button><button id="ftohide">Hide</button><br><br>  
+	<div id="div1ft" style="width:80px;height:80px;background-color:red;"></div><br>  
+	<div id="div2ft" style="width:80px;height:80px;background-color:green;"></div><br>  
+	<div id="div3ft" style="width:80px;height:80px;background-color:blue;"></div>  
+	<hr>
+
+	<button id="stop" style="margin:0 600px;">Stop Slide Down</button>
+	<div id="flip">Click To Slide Down Panel</div>
+	<div id="panel">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>0123456789<br>HELLO</div><hr>
+
+	<div id="flip1">Click To Slide Up Panel</div>
+	<div id="panel1">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>0123456789<br>HELLO</div><hr>
+
+	<div id="flip2">Click To Slide Toggle Panel</div>
+	<div id="panel2">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>0123456789<br>HELLO</div><hr>
+	
+	<button id="animate">Start Animation</button>
+	<div class="rect"></div><br><hr>
+
+	<button id="delay">Start Delay</button>
+	<div class="rect1"></div><br>
+	<hr>
+	<hr>
+
+	<button class="btn">Click me</button>
+	<div class="a">A
+	<div class="b">B</div>
+	</div>
+</body>
+</html>

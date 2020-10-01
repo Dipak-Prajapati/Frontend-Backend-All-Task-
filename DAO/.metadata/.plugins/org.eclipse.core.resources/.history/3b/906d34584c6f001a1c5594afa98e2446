@@ -1,0 +1,35 @@
+package singleTonConnection;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public class SingleTonConnection {
+
+	public static Connection con = null;
+
+	private SingleTonConnection() {
+
+	}
+
+	public static Connection getDatabaseCoonection()
+	{
+		try
+		{	if(con == null)
+			{
+				
+			}
+		}
+		catch(ClassNotFoundException e)
+		{
+			System.out.println("Class Not Found Exception");
+		}
+		catch(SQLException e)
+		{
+			System.out.println("SQL Exception");
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

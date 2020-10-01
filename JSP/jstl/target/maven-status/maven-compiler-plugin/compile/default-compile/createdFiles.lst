@@ -1,0 +1,4 @@
+resourceBundle\Res_Bun.class
+resourceBundle\Res_Bun_en_US.class
+resourceBundle\Res_Bun_fr_CA.class
+tag\MyHandler.class

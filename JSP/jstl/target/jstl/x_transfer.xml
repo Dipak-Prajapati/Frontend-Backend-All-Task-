@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<organisation>
+	<company>
+		<emp>
+			<name>Dipak</name>
+			<mentor>Bhavika Mam</mentor>
+		</emp>
+
+		<emp>
+			<name>Shreyansh Soni</name>
+			<mentor>Ravi Bhai</mentor>
+		</emp>
+	</company>
+
+	<company>
+		<emp>
+			<name>Akshat Shah</name>
+			<mentor>Bhavika Mam</mentor>
+		</emp>
+
+		<emp>
+			<name>Savan</name>
+			<mentor>Nishant Bhai</mentor>
+		</emp>
+	</company>
+</organisation>  

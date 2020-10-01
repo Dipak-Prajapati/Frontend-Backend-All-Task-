@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+ 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.hb.model.ListModel" table="mappingMap">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="question"></property>
+		
+		<!-- Mapping List -->
+		<!-- <list name="answer" table="listanswer">
+			<key not-null="true" column="qid"></key>
+			<index column="type"></index>
+			<element column="answer" type="string"></element>
+		</list> -->
+		
+		<!-- Mapping Bag -->
+		<!-- <bag name="answer" table="baganswer">
+			<key column="qid" not-null="true"></key>
+			<element column="answer" type="string"></element>
+		</bag> -->
+		
+		<!-- Mapping Set -->
+		<set name="answer" table="setanswer">
+			<key column="qid" not-null="true"></key>
+			<element column="answer" type="string"></element>
+		</set>
+		
+		<!-- Mapping Map -->
+		<!-- <map name="answer" table="mapanswer" cascade="all">
+			<key column="qid" not-null="true"></key>
+			<index column="question" type="string"></index>
+			<element column="answer" type="string"></element>
+		</map> -->
+	</class>
+
+</hibernate-mapping>

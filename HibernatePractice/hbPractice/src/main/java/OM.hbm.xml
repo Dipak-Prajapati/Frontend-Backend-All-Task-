@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+ 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<!-- <class name="com.hb.onetoone.Question" table="OMQue"> <id name="id"> 
+		<generator class="increment"></generator> </id> <property name="qname"></property> 
+		<list name="answers" cascade="all"> <key column="qid"></key> <index column="type"></index> 
+		<one-to-many class="com.hb.onetoone.Answer"/> </list> </class> <class name="com.hb.onetoone.Answer" 
+		table="OMans"> <id column="id"> <generator class="increment"></generator> 
+		</id> <property name="answername"></property> <property name="postedBy"></property> 
+		</class> -->
+
+
+	<class name="com.hb.onetoone.Question" table="q501">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="qname"></property>
+
+		<list name="answers" cascade="all">
+		
+			<key column="qid"></key>
+			<index column="type"></index>
+			<one-to-many class="com.hb.onetoone.Answer"/>
+		</list>
+	</class>
+
+	<class name="com.hb.onetoone.Answer" table="ans501">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="answername"></property>
+		<property name="postedBy"></property>
+	</class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,8 @@
+package jspPracticePackage;
+
+public class ExtendsClass {
+	public String msg()
+	{
+		return "JSP Page extends Attribute:";
+	}
+}

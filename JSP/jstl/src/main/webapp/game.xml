@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<games>
+	<game>
+		<name>CS GO</name>
+		<platform>PC</platform>
+		<price>400</price>
+	</game>
+
+	<game>
+		<name>PUBG</name>
+		<platform>PC and Mobile</platform>
+		<price>900</price>
+	</game>
+
+	<game>
+		<name>Fortnite</name>
+		<platform>PC and Mobile</platform>
+		<price>500</price>
+	</game>
+
+	<game>
+		<name>Cricket</name>
+		<platform>PC and Mobile</platform>
+		<price>0</price>
+	</game>
+
+	<game>
+		<name>Kabbadi</name>
+		<platform>Ground</platform>
+		<price>0</price>
+	</game>
+
+	<game>
+		<name>Car </name>
+		<platform>PC and Mobile</platform>
+		<price>500</price>
+	</game>
+
+</games>

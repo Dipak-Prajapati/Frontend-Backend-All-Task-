@@ -1,0 +1,17 @@
+INDEX VERSION 1.131
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2430930153.index
+\jspPractice\src\main\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\947951981.index
+\servletPractice\src\test\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\602472623.index
+\jstl\src\main\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2099963576.index
+\jstl\src\main\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1636930439.index
+\tag\src
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2038753142.index
+\jspPractice\src\main\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1805477411.index
+\servletPractice\src\test\java
+D:\INEXTURE\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2658556087.index
+\servletPractice\src\test\java

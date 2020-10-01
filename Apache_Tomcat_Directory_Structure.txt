@@ -1,0 +1,107 @@
+****Explain directory structure of Tomcat?
+
+--Directory structure of Tomcat are
+
+*bin - contain startup, shutdown, and other scripts (*.sh for UNIX and *.bat for Windows systems) 
+	   and some jar files also there.
+
+*conf - Server configuration files (including server.xml) and related DTDs. The most important file
+       in here is server.xml. It is the main configuration file for the container.
+
+*lib - contains JARs those are used by container and Servlet and JSP application programming interfaces (APIs).
+
+*logs - Log and output files.
+
+*webapps – deployed web applications reside in it .
+
+*temp - Directory used by the JVM for temporary files .
+
+*work - contains temporary files, precompiled JSP pages and other intermediate files.
+
+************Bin************
+
+*bin - contain startup, shutdown, and other scripts (*.sh for UNIX and *.bat for Windows systems) 
+	   and some jar files also there.
+
+*service.bat - Apache Tomcat provides the service.bat. It is used to manually install Tomcat as a service.
+			   Administrator privileges are required to run this script.
+			  
+*shutdown.bat - close tomcat service.
+
+*startup.bat -  start the server
+
+*version.bat - bat file inside tomcat/bin directory to check the version of Tomcat in Windows. 
+			   When you run this script in Linux or Windows it prints information about tomcat version, 
+			   the java version used to run tomcat, Server built date, OS name, OS Version, architecture, 
+			   JVM version and JVM vendor etc.
+			   
+*catalina.bat-For Windows users, these scripts are included as batch files, with the extension "bat". 
+			   "Catalina" is the script that is actually responsible for starting Tomcat; the "startup" 
+			   script simply runs "catalina" with the argument "start" ("catalina" also can be used with the "stop" 
+			   parameter to shut down Tomcat).
+			   
+*setenv.bat - The setenv. batcommand is used to modify or to set environment variables for the Tomcat application 
+				server. These setting only apply when using the catalina.bat or the startup.bat methods for 
+				starting the tomcat application server.
+				
+*************conf*************
+
+*conf - Server configuration files (including server.xml) and related DTDs. The most important file
+       in here is server.xml. It is the main configuration file for the container.
+
+*catalina.policy - The configuration file for security decisions is catalina.policy, a standard Java format 
+				   security policy file that is read by the Java Virtual Machine. But, this file is only used 
+				   if you invoke Tomcat with the -security option. It contains a series of permissions, each 
+				   granted to a particular codeBase, or set of Java classes.
+				   
+*catalina.properties - This file is a standard Java properties file for the Catalina class. 
+					   It contains information such as security package lists and class loader paths. 
+					   This file can also contains some String cache settings, that you might edit when 
+					   tuning your server for best Tomcat performance.
+					   
+*server.xml - https://www.akadia.com/download/soug/tomcat/html/tomcat_server_xml.html
+
+*web.xml -  http://wiki.metawerx.net/wiki/Web.xml
+
+*context.xml - http://wiki.metawerx.net/wiki/Context.xml
+
+*** tomcat-users.xml-
+Tomcat configuration files are found in the directory: CATALINA_HOME/conf (where CATALINA_HOME environment variable 
+is the Tomcat installation directory). The main configuration file is server.xml. tomcat-users.xml is one of the 
+configuration files.
+
+An example of the tomcat-users.xml file is shown below:
+
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+    <role rolename="tomcat"/>
+    <role rolename="role1"/>
+    <user username="tomcat" password="tomcat" roles="tomcat"/>
+    <user username="both" password="tomcat" roles="tomcat,role1"/>
+    <user username="role1" password="tomcat" roles="role1"/>
+</tomcat-users>
+<tomcat-users>: This is the root element. This has two nested elements: role and user.
+
+<role>: Each role that a user can play is defined with a <role> element. The attribute rolename specifies the name.
+<user>: Each user has a <user> entry. This has three required attributes: username, password and roles. Note 
+that a user can have more than one role.
+
+username – Username this user must log on with.
+password – Password this user must log on with (in clear text).
+roles – Comma-delimited list of the role names associated with this user.
+NOTE: For a newly installed Tomcat 7 web server, the role and user entries were commented in the tomcat-users.xml.
+
+
+
+****lib - contains JARs those are used by container and Servlet and JSP application programming interfaces (APIs).****
+
+*******logs - Log and output files.
+			  Once Apache Tomcat starts, it will create several log files in the /opt/bitnami/tomcat/logs directory. 
+			  The main log file is the catalina.out file where you can find error messages. On some platforms, 
+			  you may need root account privileges to view these files.
+
+*temp - Directory used by the JVM for temporary files .
+			  
+******webapps – deployed web applications reside in it .
+
+*******work - contains temporary files, precompiled JSP pages and other intermediate files.

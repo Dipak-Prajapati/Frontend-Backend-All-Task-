@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*.main
+		{
+			border:2px solid #ccc;
+			color:rebeccapurple;
+			padding : 1em;
+		}
+		.in
+		{
+			color: green;
+			font-weight: bold;
+		}*/
+		ul * : first-child
+		{
+			
+		}
+		li[class|="specialtext"]
+		{
+			color: green;
+			font-weight: bold;
+		}
+		article *	:first-child 
+		{ 
+			border:2px solid #ccc;
+			color:rebeccapurple;
+			padding : 1em;
+		} 
+	</style>
+</head>
+<body>
+	<ul class="main">
+		<li class="special">Item One</li>
+		<li>Item Two
+			<ul>
+				<li class="specialtext-abs">2.1</li>
+				<li>2.2</li>
+			</ul>
+		</li>
+		<li class="special a">Item Three
+			<ul class="in">
+				<li>3.1
+					<ul>
+						<li class="special">3.1.1</li>
+						<li>3.1.2</li>
+					</ul>
+				</li>
+				<li>3.2</li>
+			</ul>
+		</li>
+	</ul>
+
+	<article class="s">
+		   <p>I'm a paragraph</p>
+      <h2>Monkey hair</h2>
+      <article>
+      <p>I will NOT get selected</p>		
+		</article>
+	</article>
+
+	<h1>**********</h1>
+	<article>
+		   <p>I'm a paragraph</p>
+      <h2>Monkey hair</h2>
+      <article>
+      <p>I will NOT get selected</p>		
+		</article>
+	</article>
+</body>
+</html>
+
+
+

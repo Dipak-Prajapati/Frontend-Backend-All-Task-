@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\INEXTURE\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1805477411.index
+\servletPractice\src\test\java
+D:\INEXTURE\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2430930153.index
+\jspPractice\src\main\java
+D:\INEXTURE\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\947951981.index
+\servletPractice\src\main\java
+D:\INEXTURE\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2658556087.index
+\servletPractice\src\test\java

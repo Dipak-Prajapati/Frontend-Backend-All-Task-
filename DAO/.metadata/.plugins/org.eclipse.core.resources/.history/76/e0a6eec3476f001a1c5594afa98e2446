@@ -1,0 +1,22 @@
+package singleton;
+
+public class EnumSingleTon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+enum Single
+{
+	INSTANCE;
+	
+	int i;
+	
+	public void show()
+	{
+		System.out.println(i);
+	}
+}

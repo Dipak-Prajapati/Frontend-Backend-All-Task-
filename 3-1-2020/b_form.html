@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BASIC FORM</title>
+  <style type="text/css">
+    form
+    {
+      margin: 0 auto;
+      width: 400px;
+      padding: 1em;
+      border:1px solid black;
+      border-radius: 1em;
+    }
+    ul
+    {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    form li+li
+    {
+      margin-top: 1em;
+    }    
+    label
+    {
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+    input,textarea
+    {
+      font-family:1em sans-serif;
+      width: 300px;
+      box-sizing: border-boxs;
+      border: 1px solid #999;
+    }
+    input:focus,textarea:focus
+    {
+      border-color: #000;
+    }
+    textarea
+    {
+      vertical-align: top;
+      height: 5em;
+    }
+    .button
+    {
+      padding-left: 95px;
+    }
+    button
+    {
+      margin-left: .5em;
+    }
+    legend {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 10px 10px 1px #42455a;
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="d1">
+    <h1>Example Checking</h1>
+  
+  <marquee>
+    <h1>Example Checking</h1>
+  <p draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'This text may be dragged')">This text may be dragged</p>
+  </marquee>
+  <form action="" method="">
+    <ul>
+      <li> 
+        <label for="name" >Name:</label>
+        <input type="text" name="UserName" id="user_name" >
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="user_email">
+      </li><br>
+        <label for="msg">Meassage:</label>
+        <textarea name="user_msg" id="msg"></textarea><br>
+      </li><br>
+      <li class="button">
+        <input type="submit" name="button"  value="ClickMe">
+      </li>
+    </ul>
+  </form>
+
+
+  <form>
+  <fieldset>
+    <legend>Fruit juice size</legend>
+    <p>
+      <input type="radio" name="size" id="size_1" value="small" >
+      <label for="size_1">Small</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_2">Medium</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_3">Large</label>
+    </p>
+  </fieldset>
+  </form>
+
+  <form>
+    Image Button:<input type="image" alt="Click me!" src="1.jpg" width="80" height="30"><br>
+    Hidden:<input type="hidden" id="timestamp" name="timestamp" value="1286705410"><br>
+    Search:<input type="search" id="search" name="search"><br>
+    Number:<input type="tel" id="tel" name="tel" pattern="[6789]{0-9}{9}"><br>
+    URL:<input type="url" id="url" name="url"><br>
+
+    No:<input type="number" name="age" id="age" min="1" max="10" step="2"><br>
+    Slider:<input type="range" name="beans" id="beans" min="0" max="500" step="10"><br>
+    Date-Time Picker<input type="datetime-local" name="datetime" id="datetime"><br>
+    color-Picker<input type="color" name="color" id="color"><br>
+    <input type="password" name="pwd" style="-webkit-text-security: square;" />
+
+  <select id="simple" name="simple" multiple="">
+    <option>Banana</option>
+    <option>Cherry</option>
+    <option>Lemon</option>
+  </select><br>
+
+
+  </form>
+  </div>
+</body>
+</html>

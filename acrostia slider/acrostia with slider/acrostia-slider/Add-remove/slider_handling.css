@@ -1,0 +1,93 @@
+/*custom css*/
+.buttons {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.button {
+  background: #3498db;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px;
+  margin: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn {
+  margin-left: 300px;
+  margin-bottom: -60px;
+}
+.js-remove-slide img {
+  max-height: 75px;
+  border: 2px solid;
+  padding: 1px;
+  cursor: pointer;
+}
+.remove {
+  display: block;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.remove1 {
+  display: inline;
+  margin-left: 50px;
+  background: #444;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+.add-text {
+  position: absolute;
+  background-color: grey;
+  height: 20px;
+  margin-left: 320px;
+  top: 100px;
+}
+.js-remove-slide {
+  /*background-color: red;*/
+  height: 30px;
+}
+.text {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  padding-right: 20px;
+}
+.text p {
+  color: black;
+  padding-left: 90px;
+  font-weight: bold;
+}
+.video-wrapper {
+  position: relative;
+  height: 0;
+}
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+}
+iframe {
+  width: 600px;
+  height: 250px;
+}
+.js-remove-slide {
+  height: auto;
+  width: 500px;
+}
+hr {
+  width: 500px;
+}

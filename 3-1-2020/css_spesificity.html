@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Specificity</title>
+	<link rel="stylesheet" type="text/css" href="css_spesificity.css">
+	<style type="text/css">
+
+		#name
+		{
+			color: blue;
+			font-weight: bold;
+		}
+
+		/*#xyz
+		{
+			color: red;
+			font-weight: bold;
+		}
+		div.a1.a2
+		{
+			color: green;
+			font-weight: bold;
+		}
+		#name
+		{
+			color: blue;
+			font-weight: bold;
+		}
+		#edu 
+		{
+			font-weight: normal;
+			font-size: 12px;
+			color: red;
+		}
+		#myel {color:blue;}
+		span#myel  .a .b .c .d .e .f .g .h .i .j .k  { color:red; }
+		span#myel  { color:green; }
+*/
+		/*.red {
+		  color: red;
+		}
+		.blue {
+		  color: blue;
+		}*/
+		body
+		{
+			background-color: red;
+			background-image: url(dips.jpg);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			background:;
+		}				
+	</style>
+	
+</head>
+<body>
+	<div id="xyz" class="red blue">
+		<div id="xyz" class="blue red">
+		<ul>
+			<li class="name" id="name">Dipak Prajapati</li>
+			<li>SilverOak Clg</li>
+			<li>R.C. Technical</li>
+			<li>Sarthak Higher Secondary School</li>
+			<li>Super Higher Secondary School</li>
+			<span class="a b c d e f g h i j k" id="myel">would still be blue.</span>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

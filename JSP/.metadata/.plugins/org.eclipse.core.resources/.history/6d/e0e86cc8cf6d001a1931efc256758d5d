@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<games>
+	<game>
+		<name>CS GO</name>
+		<platform>PC</platform>
+	</game>
+
+	<game>
+		<name>PUBG</name>
+		<platform>PC and Mobile</platform>
+	</game>
+
+	<game>
+		<name>Fortnite</name>
+		<platform>PC and Mobile</platform>
+	</game>
+</games>

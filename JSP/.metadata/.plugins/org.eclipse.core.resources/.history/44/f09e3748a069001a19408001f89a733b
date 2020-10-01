@@ -1,0 +1,16 @@
+package jspPracticePackage;
+
+public class JavaBeanDemo {
+	
+	public JavaBeanDemo(String str1)
+	{
+		System.out.println("JAVA BEAN CUNSTRUCTOR");
+		System.out.println(str1);
+	}
+	String str = "Hello I am From JavaBeanDemo Class";
+	
+	public String message()
+	{
+		return str;
+	}
+}

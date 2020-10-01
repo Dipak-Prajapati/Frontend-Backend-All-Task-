@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test Set Bundle</title>
+</head>
+<body>
+	<h1>fmt:messsage</h1>
+	<fmt:message key="count.k1" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k2" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k3" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k4" bundle="${rs}" />
+	<br>
+
+	<hr>
+
+	<h1>fmt:messsage and fmt:param</h1>
+	<fmt:message key="count.k1" bundle="${rs}"></fmt:message>
+	<br>
+	<fmt:message key="count.k2" bundle="${rs}">
+		<fmt:param value="Mr.Dipak Prajapati"></fmt:param>
+	</fmt:message>
+	<br>
+	<fmt:message key="count.k3" bundle="${rs}">
+		<fmt:param value="Mr.Shreyansh Soni"></fmt:param>
+	</fmt:message>
+	<br>
+	<fmt:message key="count.k4" bundle="${rs}" />
+	<br>
+
+</body>
+</html>

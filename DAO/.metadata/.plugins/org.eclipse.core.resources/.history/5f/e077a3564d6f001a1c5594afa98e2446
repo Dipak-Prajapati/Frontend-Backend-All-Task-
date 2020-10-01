@@ -1,0 +1,10 @@
+package singleTonConnection;
+
+public class DbConnectionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

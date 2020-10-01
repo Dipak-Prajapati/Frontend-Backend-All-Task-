@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EL Process</title>
+</head>
+<body>
+	<h1>param</h1>
+	Welcome : ${param.name}
+	<% String name = request.getParameter("name"); %>
+	<%
+		session.setAttribute("uname", name);
+	%>
+	<a href="el_session.jsp">GO TO SESSION</a>
+</body>
+</html>

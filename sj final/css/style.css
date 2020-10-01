@@ -1,0 +1,11 @@
+.collapse navbar-collapse
+{
+	word-spacing: 20px;
+}
+
+.banner{
+	background-image: url("img/main-banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

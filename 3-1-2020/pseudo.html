@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Class And Element</title>
+	<link rel="stylesheet" type="text/css" href="pseudo.css">
+</head>
+<body>
+	<table border="5px solid black">
+		<th colspan="8"><i>PSEUDO CLASSES</i></th>
+		<tr>
+
+			<td> <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" class="active_link" target="_blank">Active</td> 
+
+			<td> <form><input type="radio" name="radio" value="NO" class="checked">Checked<input type="checkbox" name="chkbox" value="NO" class="checked"></form></td> 
+
+			<td>  City: <input type="text" value="Ahmedabad_Enabled" class="enabled"><br> Country: <input type="text" disabled="disabled" value="India_Disabled" class="disabled"></td> 
+
+			<td> Empty Tag<p></p><p>Filled Tag.</p></td> 
+
+			<td class="fl"><div><h2>First Child</h2><h2>Second Child</h2></div> <div><h2>Last Child</h2> <h2>Last Child</h2> </div></td> 
+
+			<td class="fot"><p>First-of-type</p><h1>Hello World!</h1><p>Last-Of-Type</p></td> 
+
+			<td> <form>Hover:<img src="dips.jpg" class="hover"><br>Focus:<input type="text" name="" class="focus"></form></td> 
+
+			<td> <form>In-Range(5-10)<br><input type="number" min="5" max="10" value="7" class="inrange"><br>Out-Range(red)</form></td> 
+
+		</tr>
+
+		<tr>
+			
+			<td> VALID .. INVALID<input type="email" name="" class="invalid" placeholder="Enter Valid Email"></td> 
+
+			<td> <p>I live in Ahmedabad.</p> <p lang="guj">Language****Gujarati!</p></td> 
+			
+			<td class="link"><a href="#">GOOGLE</a><br><a href="#">LINK</a></td> 
+			
+			<td class="not"><h1>One-Two-Three</h1><p>ABCDEFGHIJKL</p><h2>0123456789</h2></td> 
+			
+			<td> <ul class="ul"><li>One</li> <li>Two</li> <li>Three</li> <li>Four</li> <li>Five</li> <li>nth-child(2n+1)</li> </ul></td> 
+			
+			<td> <ol class="ol"><li>One</li> <li>Two</li> <li>Three</li> <li>Four</li> <li>Five</li> <li>nth-last-child(2)</li> </ol></td> 
+			
+			<td class="last"><p>The first paragraph.</p><br> <p>The second paragraph.</p><br> <h1>hellow</h1><br> <p>The third paragraph.</p><br><p>The fourth paragraph.</p></td> 
+			
+			<td class="first"><p>The first paragraph.</p><br> <p>The second paragraph.</p><br> <h1>hellow</h1><br> <p>The third paragraph.</p><br><p>The fourth paragraph.</p></td> 
+		
+		</tr>
+
+		<tr>
+			<td class="ot"> <div><p>1.Only Of Type.</p></div> <p>1.1 Only Of Type.</p> <p>1.2 Only Of Type.</p> <div><p>2.1 Only Of Type.</p><p>2.2 Only Of Type.</p></div> <div><p>3.1 Only Of Type.</p></div> </td> 
+			
+			<td class="oc"> <div><p>1.p Only Child.</p><span>1.span Only Child.</span></div> <div><p>2.p Only Child.</p></div> </td> 
+			
+			<td class="optional"> <p>An optional input element:<br><input></p> <p>A required input element:<br><input required></p> </td> 
+			
+			<td class="read"> <p>A normal input element:<br><input value="hello"></p> <p>A readonly input element:<br><input readonly value="hello"></p> </td> 
+			
+			<td class="root"> <!DOCTYPE html> <html> <body> <h1> Root Selector</h1> </body> </html> </td> 
+			
+			<td class="target"> <p><a href="#digit">Jump to Digit</a></p> <p><a href="#character">Jump to New Character</a></p> <p>***********************</p> <p id="digit"><b>0123456789...</b></p> <p id="character"><b>A B C D E F G...</b></p> </td> 
+			
+			<td> <p><b><a href="#" target="_blank" class="a_link">This is a link</a></b></p> </td> 
+			
+			<td> </td> 
+		
+		</tr>
+
+		<th colspan="8">PSEUDO ELEMENTS</th>
+
+		<tr>
+			
+			<td class="after"> <p>My name is Dipak</p> <p>I live in Ahmedabad</p> </td>
+
+			<td> <div class="sel"> <p>My name is Dipak</p> <p>I live in Ahmedabad</p> </div> </td>
+
+			<td> <div class="linee"> <p>My name is Dipak.<br>HELLLOOOO</p> <p>I live in Ahmedabad</p> </div> </td>
+
+
+		</tr>
+	</table>
+</body>
+</html>

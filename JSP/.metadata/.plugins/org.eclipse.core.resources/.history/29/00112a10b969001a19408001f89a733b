@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align="center">
+        <jsp:plugin
+            type="applet"
+            code="jspPracticePackage.MyApplet.class"
+            codebase="appletCode"
+            align="">
+             
+            <jsp:params>
+                <jsp:param name="firstName" value="James" />
+                <jsp:param name="lastName" value="Bond" />
+            </jsp:params>
+             
+            <jsp:fallback>
+                <p>Could not load applet!</p>
+            </jsp:fallback>
+             
+        </jsp:plugin>
+    </div>
+</body>
+</html>

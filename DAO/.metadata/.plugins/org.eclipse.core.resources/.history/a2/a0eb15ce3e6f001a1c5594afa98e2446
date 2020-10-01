@@ -1,0 +1,25 @@
+package singleton;
+
+public class SingleTonEager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SingleTon s1 = SingleTon.getInstance();
+	}
+
+}
+
+class SingleTon
+{
+	public static SingleTon single = new SingleTon();
+	private SingleTon()
+	{
+		
+	}
+	
+	public static SingleTon getInstance()
+	{
+		return single;
+	}
+}

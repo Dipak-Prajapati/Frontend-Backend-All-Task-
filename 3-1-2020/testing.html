@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+input {
+  -webkit-appearance: none; 
+  appearance: none;
+}
+input, textarea, select, button {
+  width : 150px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+form {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+
+form:focus-within {
+  background: #ff8;
+  color: black;
+}
+
+input {
+  margin: 4px;
+}
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="text" name="pwd" style="-webkit-text-security: square;" /><br>
+		<input type="text" name="user" s value="123"><br>
+		
+		 color-Picker<input type="color" name="color" id="color"><br>
+
+<input type="month" name="month" id="month" ><br>
+<input type="time" name="time" id="time"><br>
+<input type="week" name="week" id="week"><br>
+<br>
+<label for="myFruit">What is your favorite fruit? (With fallback)</label><br>
+<input type="text" id="myFruit" name="fruit" list="fruitList"><br>
+    
+<datalist id="fruitList"><br>
+  <label for="suggestion">or pick a fruit</label>
+  <select id="suggestion" name="altFruit">
+    <option>Apple</option>
+    <option>Banana</option>
+    <option>Blackberry</option>
+    <option>Blueberry</option>
+    <option>Lemon</option>
+    <option>Lychee</option>
+    <option>Peach</option>
+    <option>Pear</option>
+  </select>
+</datalist><br>
+
+<progress max="100" value="25">75/100</progress><br>
+<br>
+<meter min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter><br>
+
+<input type="submit" name="btn" value="ClickMe">
+	</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Try typing into this form.</p>
+
+<form>
+  <label for="given_name">Given Name:</label>
+  <input id="given_name" type="text">
+  <br>
+  <label for="family_name">Family Name:</label>
+  <input id="family_name" type="text">
+  <input type="text" name="">
+</form>
+
+
+
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+
+</body>
+</html>

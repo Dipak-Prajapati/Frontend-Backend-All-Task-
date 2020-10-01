@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+ 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    
+    <!-- Table per Hierarchy usign xml -->
+<!-- <hibernate-mapping>
+	<class name="com.hb.model.Employee" table="Employee"
+		discriminator-value="emp">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<discriminator column="type" type="string"></discriminator>
+		<property name="name"></property>
+
+		<subclass name="com.hb.model.Regular_Employee"
+			discriminator-value="reg_emp">
+			<property name="salary"></property>
+			<property name="bonus"></property>
+		</subclass>
+
+		<subclass name="com.hb.model.Contract_Employee"
+			discriminator-value="con_emp">
+			<property name="pay_per_hour"></property>
+			<property name="contract_duration"></property>
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>  -->
+
+
+	<!-- Table per Concrete usign xml -->
+<!-- <hibernate-mapping>
+	<class name="com.hb.model.Employee" table="Employee">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<discriminator column="type" type="string"></discriminator>
+		<property name="name"></property>
+
+		<union-subclass name="com.hb.model.Regular_Employee" table="Regular_Employee">
+			<property name="salary"></property>
+			<property name="bonus"></property>
+		</union-subclass>
+
+		<union-subclass name="com.hb.model.Contract_Employee" table="Contract_Employee">
+			<property name="pay_per_hour"></property>
+			<property name="contract_duration"></property>
+		</union-subclass>
+
+	</class>
+
+</hibernate-mapping>  -->
+
+	<!-- Table per SubClass usign xml -->
+<hibernate-mapping>
+	<class name="com.hb.model.Employee" table="Employeee">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<!-- <discriminator column="type" type="string"></discriminator> -->
+		<property name="name"></property>
+
+		<joined-subclass name="com.hb.model.Regular_Employee" table="Regular_Employeee">
+			<key column="eid"></key>
+			<property name="salary"></property>
+			<property name="bonus"></property>
+		</joined-subclass>
+
+		<joined-subclass name="com.hb.model.Contract_Employee" table="Contract_Employeee">
+			<key column="eid"></key>
+			<property name="pay_per_hour"></property>
+			<property name="contract_duration"></property>
+		</joined-subclass>
+
+	</class>
+
+</hibernate-mapping> 

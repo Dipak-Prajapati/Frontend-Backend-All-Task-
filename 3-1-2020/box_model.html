@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style type="text/css">
+		.box 
+		{
+			width: 350px;
+			height: 150px;
+			margin: 10px;
+			padding: 50px;
+			border: 5px solid black;
+			background-image: url(dips.jpg);
+			background-size: cover;
+		}
+		.box1 
+		{ 
+			width: 350px;
+			height: 150px;
+			margin: 10px;
+			padding: 50px;
+			border: 5px solid black;
+  			box-sizing: border-box; 
+		} 
+		.links-list a 
+		{
+			background-color: rgb(179,57,81);
+			color: #eee;
+			text-decoration: none;
+			padding: 0;
+			margin: 0;	
+			display: inline-flex;
+		}
+		li{list-style-type: none;}
+
+		.links-list a:hover
+		 {
+			background-color: rgb(66, 28, 40);
+			color: #fff;
+		}
+		.preview 
+		{
+			width: 90%;
+			max-width: 700px;
+			border: 1px solid #4D4E53;
+			border-radius: 2px;
+			padding: 10px 14px 10px 10px;
+			margin-bottom: 10px;
+		}
+		.box2
+		{
+			width: 350px;
+			height: 150px;
+			margin: 10px;
+			padding: 50px;
+			border: 5px solid black;
+			background:   
+			linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+			url(dips.jpg) center no-repeat, 
+			rebeccapurple;
+		}
+	</style>
+</head>
+<body>
+	
+	
+
+	<div class="box">HELLO</div>
+	<div class="box1">HELLO</div>
+	<div class="box2"></div>
+	<section class="preview">
+	<nav>
+		<ul class="links-list">
+		    <li><a href="">Link one</a></li>
+		    <li><a href="">Link two</a></li>
+		    <li><a href="">Link three</a></li>
+	  	</ul>
+	</nav>
+	</section>
+</body>
+</html>

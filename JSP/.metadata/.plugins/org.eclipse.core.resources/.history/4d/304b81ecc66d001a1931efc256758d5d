@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "x" uri = "http://java.sun.com/jsp/jstl/xml" %>
+<%@ page isELIgnored="false" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSTL XML TAG</title>
+</head>
+<body>
+	<x:parse var="play">
+		<games>
+			<game>
+				<name>CS GO</name>
+				<platform>PC</platform>
+			</game>
+			
+			<game>
+				<name>PUBG</name>
+				<platform>PC and Mobile</platform>
+			</game>
+			
+			<game>
+				<name>Fortnite</name>
+				<platform>PC and Mobile</platform>
+			</game>
+		</games>
+	</x:parse>
+	
+	 <b>The name of the first Game is</b>: 
+      <x:out select = "$play/games/game[1]/name" />
+      <br>
+      
+      <b>The name of the second Game is</b>: 
+      <x:out select = "$play/games/game[2]/name" />
+	  <br>
+		
+	  <b>The platform of the third Game is</b>: 
+      <x:out select = "$play/games/game[3]/platform" />
+	  <br>
+</body>
+</html>

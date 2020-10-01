@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\INEXTURE\Spring Rest Api Frontend\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3378474594.index
+610671385.index
+2352679642.index
+981284032.index
+3687136424.index
+2407108477.index

@@ -1,0 +1,9 @@
+package com.dip;
+
+@SpringBootApplication
+public class SpringRestApiFrontend {
+	public static void main(String[] args) {
+		SpringApplication.run(SpringSecurityOauth2Example1Application.class, args);
+	}
+
+}

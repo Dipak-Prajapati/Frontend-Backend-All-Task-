@@ -1,0 +1,901 @@
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 80%;
+        margin-bottom: 71%;
+    }
+    .c-bg {
+        width: 210px;
+        height: 60px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 12px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 14px;
+        padding-left: 13px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 281px;
+        margin-top: -6px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 15px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 1px;
+        margin-top: -12px;
+        color: #74C7D5;
+        font-size: 35px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 65%;
+    }
+    .c-4 {
+        margin-left: 15px;
+        width: 256px;
+        height: 400px;
+        background: #C8535A 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .services-text2 {
+        color: #FFCCCF;
+        font-family: Lato-Regular;
+        font-size: 14px;
+        text-align: justify;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 15px;
+    }
+    .about-card-margin {
+        margin-top: 82px;
+        margin-bottom: 100px;
+        margin-left: 15px;
+    }
+    .about-text {
+        color: #E6D1E3;
+        font-family: Lato-Regular;
+        font-size: 14px;
+        text-align: justify;
+    }
+    div .column {
+        float: left;
+        width: 45%;
+        margin-left: 15px;
+    }
+    ul.navbar-nav.p-navbar {
+        margin-left: 40%;
+    }
+    .add4 {
+        margin-top: 24px;
+        color: #D0EFEA;
+        font-family: Lato-Regular;
+        font-size: 16px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: -25px;
+        margin-top: 35px;
+    }
+    .question h3 {
+        margin-top: -115px;
+        margin-left: 102px;
+        width: 90%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .form-content input {
+        width: 74%;
+        margin-left: 102px;
+    }
+    .form-content textarea {
+        width: 74%;
+        height: 170px;
+        margin-left: 102px;
+    }
+    .form-content .send {
+        background: #df5c64;
+        color: #fff;
+        font-size: 25px;
+        width: 74%;
+        margin: 0px 0px 0px 102px;
+        /* margin: -14px 165px; */
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    /* For tablets: */
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 70%;
+        margin-bottom: 55%;
+    }
+    .c-bg {
+        width: 245px;
+        height: 67px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 14px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 14px;
+        padding-left: 31px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 252px;
+        margin-top: -8px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 15px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 1px;
+        margin-top: -12px;
+        color: #74C7D5;
+        font-size: 37px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 54%;
+    }
+    .c-4 {
+        margin-left: 45px;
+        width: 256px;
+        height: 400px;
+        background: #C8535A 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 40px;
+    }
+    .about-card-margin {
+        margin-top: 82px;
+        margin-bottom: 100px;
+        margin-left: 40px;
+    }
+    div .column {
+        float: left;
+        width: 40%;
+        margin-left: 40px;
+    }
+    .add4 {
+        margin-top: 24px;
+        color: #D0EFEA;
+        font-family: Lato-Regular;
+        font-size: 16px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: 26px;
+        margin-top: 35px;
+    }
+    .question h3 {
+        margin-top: -115px;
+        margin-left: 102px;
+        width: 52%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .form-content input {
+        width: 74%;
+        margin-left: 102px;
+    }
+    .form-content textarea {
+        width: 74%;
+        height: 170px;
+        margin-left: 102px;
+    }
+    .form-content .send {
+        background: #df5c64;
+        color: #fff;
+        font-size: 25px;
+        width: 74%;
+        margin: 0px 0px 0px 102px;
+        /* margin: -14px 165px; */
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    /* For tablets: */
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 60%;
+        margin-bottom: 48%;
+    }
+    .c-bg {
+        width: 290px;
+        height: 73px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 14px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 15px;
+        padding-left: 44px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 239px;
+        margin-top: -5px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 15px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 23px;
+        margin-top: -12px;
+        color: #74C7D5;
+        font-size: 40px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 45%;
+    }
+    .c-4 {
+        margin-left: 67px;
+        width: 256px;
+        height: 400px;
+        background: #C8535A 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 60px;
+    }
+    .about-card-margin {
+        margin-top: 82px;
+        margin-bottom: 100px;
+        margin-left: 60px;
+    }
+    div .column {
+        float: left;
+        width: 51%;
+        margin-left: 60px;
+    }
+    .add4 {
+        margin-top: 24px;
+        color: #D0EFEA;
+        font-family: Lato-Regular;
+        font-size: 16px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: 26px;
+        margin-top: 35px;
+    }
+    .question h3 {
+        margin-top: -115px;
+        margin-left: 119px;
+        width: 45%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .form-content input {
+        width: 74%;
+        margin-left: 119px;
+    }
+    .form-content textarea {
+        width: 74%;
+        height: 170px;
+        margin-left: 119px;
+    }
+    .form-content .send {
+        background: #df5c64;
+        color: #fff;
+        font-size: 25px;
+        width: 74%;
+        margin: 0px 0px 0px 118px;
+        /* margin: -14px 165px; */
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 720px) {
+    /* For desktop: */
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 29%;
+        margin-bottom: 29%;
+    }
+    .c-bg {
+        width: 509px;
+        height: 100px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 35px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 15px;
+        padding-left: 44px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 112px;
+        margin-top: -29px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 15px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 30px;
+        margin-top: -15px;
+        color: #74C7D5;
+        font-size: 68px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 22%;
+    }
+    div .card-margin .col-md-6 {
+        max-width: 35%;
+        margin-left: 61px;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 215px;
+    }
+    .card-deck .col-md-6 {
+        max-width: 50%;
+        margin-left: -14px;
+        margin-bottom: 30px;
+    }
+    div .column {
+        float: left;
+        width: 40%;
+        margin-left: 52px;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: 11px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: -40px;
+    }
+    .add4 {
+        margin-top: 71px;
+        color: #D0EFEA;
+        font-family: Lato-Regular;
+        font-size: 16px;
+    }
+    .question h3 {
+        margin-top: -115px;
+        margin-left: 27px;
+        width: 38%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .form-content input, textarea {
+        font-size: 19px;
+        padding: 8px 24px;
+        /* margin: 5px 24px; */
+        background: #68a097;
+        outline: none;
+        border: none;
+        color: #68a097;
+        border-radius: 5px;
+    }
+    .form-content input {
+        width: 84%;
+        margin: 5px 27px;
+    }
+    input.email {
+        margin-left: 16px;
+    }
+    .form-content textarea {
+        width: 91%;
+        height: 170px;
+        margin: 30px 27px;
+    }
+    .form-content .send {
+        background: #df5c64;
+        color: #fff;
+        font-size: 24px;
+        width: 43%;
+        margin: -14px 190px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .con-margin {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -13px;
+    }
+    .con-margin1 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -19px;
+    }
+}
+
+/* @media only screen and (min-width:576px) {
+    .c-4 {
+        margin-left: 45px;
+        width: 256px;
+        height: 400px;
+        background: #C8535A 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+} */
+
+@media only screen and (min-width:960px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 29%;
+        margin-bottom: 29%;
+    }
+    .c-bg {
+        width: 509px;
+        height: 100px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 35px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 15px;
+        padding-left: 44px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 112px;
+        margin-top: -29px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 15px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 30px;
+        margin-top: -15px;
+        color: #74C7D5;
+        font-size: 68px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 22%;
+    }
+    div .card-margin .col-md-6 {
+        max-width: 23%;
+        margin-left: 52px;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 336px;
+    }
+    .card-deck .col-md-6 {
+        max-width: 34%;
+        margin-left: -25px;
+        margin-bottom: 30px;
+    }
+    ul.navbar-nav.p-navbar {
+        margin-left: 212px;
+    }
+    /* .content {
+        width: 230px;
+        height: 224px;
+        background-color: #EEEEEE;
+        padding: 0px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-left: -20px;
+        margin-bottom: 15px;
+    } */
+    div .column {
+        float: left;
+        width: 30%;
+        margin-left: 22px;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: 11px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: -40px;
+    }
+    .question h3 {
+        margin-top: 18px;
+        margin-left: 75px;
+        width: 38%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .form-content input, textarea {
+        font-size: 19px;
+        padding: 8px 24px;
+        /* margin: 5px 24px; */
+        background: #68a097;
+        outline: none;
+        border: none;
+        color: #68a097;
+        border-radius: 5px;
+    }
+    .form-content input {
+        width: 80%;
+        margin: 0px 75px;
+    }
+    input.email {
+        margin-left: 16px;
+    }
+    .form-content textarea {
+        width: 78%;
+        height: 150px;
+        margin: 30px 75px;
+    }
+    .form-content .send {
+        background: #df5c64;
+        color: #fff;
+        font-size: 24px;
+        width: 50%;
+        margin: 0px 0px 0px 131px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .con-margin {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -13px;
+    }
+    .con-margin1 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -19px;
+    }
+}
+
+@media only screen and (min-width:991px) {
+    .navbar-nav {
+        margin-left: 50%;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    .c-bg {
+        width: 730px;
+        height: 130px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 50px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 15px;
+        padding-left: 44px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 20px;
+        margin-top: -40px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 20px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 30px;
+        margin-top: -20px;
+        color: #74C7D5;
+        font-size: 100px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 22%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-nav {
+        margin-left: 549px;
+    }
+    .hbgimg {
+        background: url(../img/main-banner.png);
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+    }
+    #carouselExampleIndicators {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    .c-bg {
+        width: 730px;
+        height: 130px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    .slide-text {
+        width: 367px;
+        height: 188px;
+        font-family: Lato-Light;
+        font-size: 50px;
+        color: #74C7D5;
+        position: absolute;
+    }
+    .sgood-ideas {
+        padding-top: 15px;
+        padding-left: 44px;
+    }
+    .scomes {
+        float: right;
+        margin-right: 20px;
+        margin-top: -40px;
+    }
+    .sfirst {
+        padding-top: 15px;
+        padding-right: 20px;
+        float: right;
+        font-family: Lato-Black;
+        margin-right: 30px;
+        margin-top: -20px;
+        color: #74C7D5;
+        font-size: 100px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+    .indicator-space {
+        position: relative;
+        margin-top: 22%;
+    }
+    div .card-margin .col-md-6 {
+        max-width: 24%;
+        margin-right: -28px;
+        margin-left: 5px;
+    }
+    #rectangle {
+        width: 256px;
+        height: 47px;
+        background: #A1CA6C;
+        border-radius: 6px;
+        margin: 33px 392px;
+    }
+    .card-deck .col-md-6 {
+        max-width: 29%;
+        margin-left: -70px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    div .column {
+        float: left;
+        width: 22%;
+        margin-left: 0px;
+    }
+    ul.navbar-nav.p-navbar {
+        margin-left: 40%;
+    }
+    .question h3 {
+        margin-top: 25px;
+        margin-left: 24px;
+        width: 35%;
+        color: #FFFFFF;
+        font-family: Lato-Light;
+    }
+    .add4 {
+        margin-top: 63px;
+        color: #D0EFEA;
+        font-family: Lato-Regular;
+        font-size: 16px;
+    }
+    .caddress {
+        display: inline-block;
+        margin-left: -22px;
+    }
+    .cmap {
+        display: inline-block;
+        margin-left: -71px;
+    }
+    .form-content input, textarea {
+        font-size: 19px;
+        padding: 8px 24px;
+        /* margin: 5px 24px; */
+        background: #68a097;
+        outline: none;
+        border: none;
+        color: #68a097;
+        border-radius: 5px;
+    }
+    .form-content input {
+        width: 95%;
+        margin: 0px 24px;
+    }
+    .form-content textarea {
+        width: 98%;
+        height: 138px;
+        margin: 30px 24px;
+    }
+    .form-content button {
+        background: #df5c64;
+        color: #fff;
+        font-size: 24px;
+        width: 43%;
+        margin: -14px 165px;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 16px;
+        border: none;
+    }
+    .con-margin {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -13px;
+    }
+    .con-margin1 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: -78px;
+    }
+}

@@ -1,0 +1,18 @@
+package resourceBundle;
+
+import java.util.ListResourceBundle;
+
+public class Res_Bundle extends ListResourceBundle{
+
+	@Override
+	protected Object[][] getContents() {
+		// TODO Auto-generated method stub
+		return new Object[][] {
+			{"k1","Hello!"},
+			{"k2","How Are You?"},
+			{"k3","I am Good..."},
+			{"k4","BYE.."},
+		};
+	}
+
+}

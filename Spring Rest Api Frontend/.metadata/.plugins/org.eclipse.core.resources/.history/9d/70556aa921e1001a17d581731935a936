@@ -1,0 +1,6 @@
+package com.dip.controller;
+
+@Controller
+public class UserController {
+	
+}

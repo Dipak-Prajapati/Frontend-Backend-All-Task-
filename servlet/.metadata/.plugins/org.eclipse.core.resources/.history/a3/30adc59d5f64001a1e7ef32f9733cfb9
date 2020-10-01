@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<% 
+		out.print("This is Scriple Tag : ")
+		out.print(5*5); 
+		int a = 5 , b = 5;
+		int sum = a + b;
+	%>
+	<br>
+	<%= "This is Expression Tag :" %>
+	<%= "sum is :" + sum %>
+	
+</body>
+</html>

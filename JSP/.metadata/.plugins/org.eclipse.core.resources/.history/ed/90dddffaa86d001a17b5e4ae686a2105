@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ page isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formatting Tag fmt:bundle</title>
+</head>
+<body>
+	<h1>fmt:bundle and fmt:messsage</h1>
+	<h2>Without Prefix</h2>
+	<fmt:bundle basename="resourceBundle.Res_Bundle">
+		<fmt:message key="count.k1"></fmt:message>
+		<fmt:message key="count.k2"></fmt:message>
+		<fmt:message key="count.k3"></fmt:message>
+		<fmt:message key="count.k4"></fmt:message>
+	</fmt:bundle>
+
+	<hr>
+
+	<h2>With Prefix</h2>
+	<fmt:bundle basename="resourceBundle.Res_Bundle" prefix="count.">
+		<fmt:message key="k1"></fmt:message>
+		<fmt:message key="k2"></fmt:message>
+		<fmt:message key="k3"></fmt:message>
+		<fmt:message key="k4"></fmt:message>
+	</fmt:bundle>
+	
+	<h1>fmt:bundle , fmt:messsage and fmt:param</h1>
+	<h2>With Prefix</h2>
+	<fmt:bundle basename="resourceBundle.Res_Bundle" prefix="count.">
+		<fmt:message key="k1"></fmt:message><br/>
+		<fmt:message key="k2">
+			<fmt:param value="Mr.Dipak Prajapati"></fmt:param><br/>
+		</fmt:message>
+		<fmt:message key="k3">
+			<fmt:param value="Mr.Shreyansh Soni"></fmt:param><br/>
+		</fmt:message>
+		
+		<fmt:message key="k4"></fmt:message>
+	</fmt:bundle>
+	
+
+	<h1>fmt:setBundle and fmt:messsage</h1>
+	<fmt:setBundle basename="resourceBundle.Res_Bundle" var="rs"
+		scope="application" />
+	<fmt:message key="count.k1" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k2" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k3" bundle="${rs}" />
+	<br>
+	<fmt:message key="count.k4" bundle="${rs}" />
+	<br>
+	<a href="testSetBundle.jsp">Test Set Bundle</a>
+
+
+</body>
+</html>

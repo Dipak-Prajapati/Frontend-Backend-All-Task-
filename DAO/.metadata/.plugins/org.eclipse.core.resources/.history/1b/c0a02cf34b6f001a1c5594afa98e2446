@@ -1,0 +1,5 @@
+package singleTonConnection;
+
+public class SingleTonConnection {
+
+}

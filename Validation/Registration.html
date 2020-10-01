@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./script/validation.js">
+		
+	</script>
+	<!-- <script type="text/javascript" src="./script/temp.js"></script> -->
+</head>
+<body>
+
+	<div class="container">
+		<form name="reg" action="#" method="post" action="" >
+			<h1 class="h1-center">Registration</h1>
+			<span class="error" id="shead"></span>
+			<div>
+				<label for="fname">First Name : </label><br>
+				<input type="text" name="fname" id="fname" placeholder="Dipak" onblur=validate()><br>
+				<span class="error" id="sfname"></span>
+			</div>
+			<div>
+				<label for="lname">Last Name : </label><br>
+				<input type="text" name="lname" id="lname" placeholder="Prajapati"><br>
+				<span class="error" id="slname"></span>
+			</div>
+
+			<div>
+				<label for="email">Email Id : </label><br>
+				<input type="text" name="email" id="email" placeholder="abc@gmail.com" ><br>
+				<span class="error" id="semail"></span>
+			</div>
+
+			<div>
+				<label for="dob">Date Of Birth : </label><br>
+				<input type="date" name="dob" id="dob"><br>
+				<span class="error" id="sdob"></span>
+			</div>
+
+			<div>
+				<label for="m_no">Mobile No : </label><br>
+				<input type="text" name="m_no" id="m_no" maxlength="13" placeholder="+919624038213"><br>
+				<span class="error" id="sm_no"></span>
+			</div>
+
+			<div class="check">
+				<label for="gender">Gender : </label><br><br>
+				<div class="space"><input type="radio" name="gender" value="male" ><label for="male">: Male</label></div>
+				<div class="space"><input type="radio" name="gender" value="female" ><label for="female">: Female</label></div>
+				<br>
+				<span class="error" id="sgender"></span>
+			</div>
+
+			<div class="check">
+				<label for="lang">Languages : </label><br><br>
+				<div class="space"><input type="checkbox" name="language" value="gujarati"> <label for="gujarati">: Gujarati </label></div>
+  				<div class="space"><input type="checkbox" name="language" value="hindi"> <label for="hindi">: Hindi</label></div>
+  				<div class="space"><input type="checkbox" name="language" value="enghlish"> <label for="enghlish">: Enghlish </label></div><br>
+  				<span class="error" id="scheck"></span>
+  			</div>
+
+  			<div>
+  				<label for="hobbie">Hobbies : </label>
+  				<select name="hobbie" id="hobbie">
+				  <optgroup label="Game">
+				    <option value="CSGO">CSGO</option>
+				    <option value="PUBG">PUBG</option>
+				  </optgroup>
+				  <optgroup label="Movie">
+				    <option value="Bollywood">Bollywood</option>
+				    <option value="Hollywood">Hollywood</option>
+				  </optgroup>
+				</select>
+				<span class="error"></span>
+  			</div>
+
+  			<div>
+				<label for="address">Address : </label><br>
+				<textarea placeholder="10/4 mahashakti nagar society" id="address"></textarea><br>
+				<span class="error" id="saddress"></span>
+			</div>
+
+			<div>
+				<label for="pwd">Password : </label><br>
+				<input type="Password" name="pwd" id="pwd" placeholder="Abc@123"><br>
+				<span class="error" id="spwd"></span>
+			</div>
+
+			<div>
+				<label for="cpwd">Confirm Password : </label><br>
+				<input type="Password" name="cpwd" id="cpwd" placeholder="Abcd@123"><br>
+				<span class="error" id="scpwd"></span>
+			</div>
+
+			<div>
+				<input type="submit" name="register" id="register" value="Register">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

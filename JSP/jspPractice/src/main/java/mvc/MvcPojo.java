@@ -1,0 +1,32 @@
+package mvc;
+
+public class MvcPojo {
+	
+	private String email;
+	private String password;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+	public boolean validate()
+	{
+		if(password.equals("admin"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

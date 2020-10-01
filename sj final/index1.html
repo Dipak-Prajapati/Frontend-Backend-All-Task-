@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playgroundcontrol</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  
+</head>
+<body>
+
+  
+
+        <button class="add-slide">Add slide</button>
+
+
+
+    <br>
+    <br>
+  
+<!-- testing and fileing and listing  -->
+    <form action="index.html" method="get">
+        <div class="form-group">
+            <label>Add some text: </label>
+            <input type="text" name="user" placeholder="Text" class="form-control" id="first" autocomplete="off">
+         </div>
+            
+           <br>
+
+        <div class="form-group">
+            <label for="image">Choosing File</label>
+            <input type="file" class="image2" id="image" />
+    <br> <br><br> <p>Added file is here:</p><br>
+        </div>
+  </form>
+
+  <div class="js-remove-slide" id="output">
+   <div id="output0" class="js-remove-slide" onClick=getId(this)> 
+   <img src="images/background-1.png"/><p id="imgname">background-1.png</p> 
+   <!-- <i class="fa fa-trash " aria-hidden="true" ></i> -->
+   <hr>
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    
+  <script src="./slick/custom1.js"></script>
+  </body>
+  </html>
+
+
+<!-------------------------------------------------------------------------------------->
+
+
+
+
+<!-- <script>
+window.onload = function() {
+   var getInput = prompt("Hey type something here: ");
+   localStorage.setItem("storageName",getInput);
+   alert(storageName);
+}
+</script> --> 
+
+ 
+ 
+
+  <!-- </script> --> 
+  <!-- <script type="text/javascript">
+    
+
+    
+    $(document).on('ready', function() {
+      var slideIndex= 1;
+      
+      $(".variable").slick({
+       dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay:true,
+      speed:100,
+      fade: true,
+      cssEase: 'linear' 
+
+      });
+     
+ 
+
+    
+
+
+
+// removing slidesa
+  $('.js-remove-slide').on('click', function() {
+  // alert("are you sure want to delete!");
+  $('.variable').slick('slickRemove',slideIndex - 1);
+  if (slideIndex !== 0){
+    slideIndex--;
+    // alert("deleted");
+  }
+  });
+
+         
+    // for adding slides image and video
+
+      $('.add-slide').on('click', function() 
+      {
+
+      var str1= $('#image').val();
+      var name = str1.slice(12,);
+      $("#output").append(name+"<br>");
+
+      var last  = name.split(".").pop();
+
+        if(last.match(/png|jpeg/))
+            {
+              
+             var  img = '<img src="images/'+name+'"/>';      
+            alert("img slide has been added");
+           
+           slideIndex++;
+           $('.variable').slick('slickAdd',img);
+            }
+
+         else
+
+            {
+
+                 myfunction();
+                function myfunction(){
+                var fame=str1.slice(12,);
+                alert("video has been added");
+                var video ='<div class="video-wrapper"><iframe src="images/'+fame+'"/></iframe></div>';
+                slideIndex++;
+                $('.variable').slick('slickAdd',video);
+
+                }
+
+            }
+   
+          });
+
+     });
+
+   
+
+ </script> -->
+
+

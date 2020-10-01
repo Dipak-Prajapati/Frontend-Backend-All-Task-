@@ -1,0 +1,3 @@
+127.0.0.1 - admin [03/Mar/2020:17:36:15 +0530] "PUT /manager/text/deploy?path=%2FdemoWeb&update=true HTTP/1.1" 200 65
+0:0:0:0:0:0:0:1 - - [03/Mar/2020:17:37:05 +0530] "GET /demoWeb/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [03/Mar/2020:17:37:06 +0530] "GET /favicon.ico HTTP/1.1" 200 21630

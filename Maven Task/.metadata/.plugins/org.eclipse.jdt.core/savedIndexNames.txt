@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\INEXTURE\Maven Task\.metadata\.plugins\org.eclipse.jdt.core
+160905617.index
+2426300459.index

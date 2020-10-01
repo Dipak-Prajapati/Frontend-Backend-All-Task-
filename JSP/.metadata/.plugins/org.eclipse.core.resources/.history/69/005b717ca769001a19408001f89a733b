@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- Can't Print Because Page Scope is Over -->
+
+	<%-- 	<jsp:useBean id="val1" class="jspPracticePackage.JavaBeanGetSet"
+		scope="page"></jsp:useBean>
+	<jsp:getProperty property="name" name="val1" />
+	<jsp:getProperty property="password" name="val1" />
+	<jsp:getProperty property="email" name="val1" /> --%>
+
+
+	<!-- Session Scope -->
+	<jsp:useBean id="val1" class="jspPracticePackage.JavaBeanGetSet"
+		scope="session"></jsp:useBean>
+	<jsp:getProperty property="name" name="val1" />
+	<jsp:getProperty property="password" name="val1" />
+	<jsp:getProperty property="email" name="val1" />
+</body>
+</html>

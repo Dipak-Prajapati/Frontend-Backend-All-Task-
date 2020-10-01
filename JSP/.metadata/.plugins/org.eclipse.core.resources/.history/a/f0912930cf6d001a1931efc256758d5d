@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSTL XML TAG</title>
+</head>
+<body>
+	<h1>x:out , x:parse</h1>
+	<c:import url="game.xml" var="play"></c:import>
+	<x:parse var="result" doc="${play}">
+	</x:parse>
+
+	<b>The name of the first Game is</b>:
+	<x:out select="$result/games/game[1]/name" />
+	<br>
+
+	<b>The name of the second Game is</b>:
+	<x:out select="$result/games/game[2]/name" />
+	<br>
+
+	<b>The platform of the third Game is</b>:
+	<x:out select="$result/games/game[3]/platform" />
+	<br>
+	
+	<hr>
+	
+	<h1>x:set</h1>
+	<x:set var="a" select="$result/games/game[1]" />
+	The name of the first game -
+	<x:out select="$a/name" />
+	<br>
+
+	<x:set var="b" scope="application" select="$result/games/game[1]/platform" />
+	The platform of the first game -
+	<x:out select="$applicationScope:b" />
+	<br>
+
+	<x:set var="c" scope="session" select="$result/games/game[1]" />
+	The name of the second game -
+	<x:out select="$sessionScope:c/name" />
+
+</body>
+</html>

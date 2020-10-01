@@ -1,0 +1,32 @@
+.div1
+{
+	margin: 5px 5px;
+	box-sizing: border-box;
+	border: 2px solid green;
+	padding: 10px;
+	width: 250px;
+}
+#flip,#panel,#panel1,#flip1,#flip2,#panel2
+{
+	padding: 5px;
+	text-align: center;
+	border: 5px solid black;
+	background-color: #42455a;
+}
+#panel,#panel2
+{
+	padding: 50px;
+	display: none;
+}
+#panel1
+{
+	padding:50px;
+}
+.rect,.rect1
+{
+	width:80px;
+	height:80px;
+	position: relative;
+	background-color:red;
+}
+

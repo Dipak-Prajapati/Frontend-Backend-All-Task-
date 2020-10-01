@@ -1,0 +1,10 @@
+package jspPracticePackage;
+
+import javax.servlet.jsp.HttpJspPage;
+
+public final class ExtendsClass implements HttpJspPage {
+	public String msg()
+	{
+		return "JSP Page extends Attribute:";
+	}
+}

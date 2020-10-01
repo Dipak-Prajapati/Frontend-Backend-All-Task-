@@ -1,0 +1,167 @@
+.navbar
+{
+    background-color : transparent;
+}
+.navbar-brand span
+{
+    font-family: Damion;
+    /* text-align: right; */
+    font-size: 35px;
+    opacity: 1;
+    letter-spacing: 0;
+    padding-left: 150px;
+    color:black;
+    /* width: 170px; */
+    /* height: 67px; */
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav 
+{
+    margin-left: 400px;
+}
+.navbar-nav li a
+{ 
+    float: right;
+    font-family: Lato-Regular;
+    text-align: left;
+}
+.home-inner
+{
+    background-image: url(../img/main-banner.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+
+
+
+
+.hbgimage
+{
+    background-image: url(../img/main-banner.png);
+    width: 100%;
+    background-position: center;
+    height: 900px;
+    background-size: cover;
+}
+.navbar-custom
+{
+    color: #FFFFFF !important;
+}
+.navbar-brand span
+{
+    font-family: Damion;
+    /* text-align: right; */
+    font-size: 35px;
+    opacity: 1;
+    letter-spacing: 0;
+    padding-left: 150px;
+    color: teal;
+    /* width: 170px; */
+    /* height: 67px; */
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav 
+{
+    margin-left: 400px;
+}
+
+.navbar-nav li a
+{ 
+    float: right;
+    font-family: Lato-Regular;
+    text-align: left;
+}
+#navbar-bar ul li a:hover
+{
+   background-color: transparent;    
+}
+.xmenu
+{
+    float: right;
+    font-family: Lato-Regular;
+    width: 646px;
+    height: 22px;
+    margin-top: -16px;
+    margin-left: 300px;
+    letter-spacing: 0;
+    text-align: center;
+}
+#carouselExampleIndicators
+{
+    margin-top:200px;
+}
+.c-bg
+{
+    margin:0 25%;
+    width: 730px;
+    height: 130px;
+    background-color: rgb(255, 255, 255,0.5);
+}
+.slide-text
+{
+    
+    width: 367px;
+    height: 188px;
+    font-family: Lato-Light;
+    font-size:50px;
+    color:#74C7D5;
+    position: absolute;
+}
+.sgood-ideas
+{
+    padding-top: 15px;
+    padding-left: 44px;
+}
+.scomes
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+.sfirst
+{
+    padding-top: 15px;
+    padding-right: 20px;
+    float: right;
+    font-family: Lato-Black;
+    margin-right: 30px;
+    margin-top: -20px;
+    color: #74C7D5;
+    font-size: 100px;
+}
+.carousel-indicators li 
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.indicatorssss
+{
+    position: relative;
+    margin-top: 15%;
+}
+.sbgimage
+{
+    /* background-image: url(../img/red-layer.png);
+    background-color:##B24A50;  */
+    background:#B24A50 url(../img/red-layer.png) no-repeat ;
+    width: 100%;
+    background-position: top;
+    height: 900px;
+}
+.our-services
+{
+    width:412px;
+    height:72px;
+    font-family: Lato-Light;
+    color:#FFFFFF;
+    font-size: 40px;
+}

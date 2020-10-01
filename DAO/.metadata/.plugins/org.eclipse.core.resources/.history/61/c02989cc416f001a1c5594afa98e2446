@@ -1,0 +1,28 @@
+package singleton;
+
+public class ThreadSafe {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class ThreadSync
+{
+	public static ThreadSync ts;
+	
+	private ThreadSync()
+	{
+		System.out.println("Instance Created :");
+	}
+	public static ThreadSync getInstance()
+	{
+		if(ts == null)
+		{
+			ts = new ThreadSync();
+		}
+		return ts;
+	}
+}

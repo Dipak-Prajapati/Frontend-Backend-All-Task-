@@ -1,0 +1,14 @@
+Basic Git Command 
+
+1) git config
+Utility : To set your user name and email in the main configuration file.
+How to : To check your name and email type in git config --global user.name and git config --global user.email. And to set your new email or name 
+		git config --global user.name = “Dipak” and git config --global user.email = “dipakprajapati.inexture@gmail.com”
+		
+2) git init
+Utility : To initialise a git repository for a new or existing project.
+How to : git init in the root of your project directory.
+
+4) git status
+Utility : To check the status of files you’ve changed in your working directory, i.e, what all has changed since your last commit.
+How to : git status in your working directory. lists out all the files that have been changed.

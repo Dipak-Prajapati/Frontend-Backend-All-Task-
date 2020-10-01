@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Example</title>
+</head>
+<body>
+		<table border="1px solid black" width="500px" height="500px">
+			<colgroup>
+				<col>
+				<col>
+				<col>
+				<col style="background-color: yellow;">
+			</colgroup>
+
+			<th>A</th>
+			<th>B</th>
+			<th></th>
+			<th>$</th>
+
+			<tr>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td>%</td>
+			</tr>
+			<tr align="center">
+				<td>F</td>
+				<td>G</td>
+				<td rowspan="2">H</td>
+				<td>^</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding:20px;">I</td>
+				<td>*</td>				
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<table border="1px solid black" width="50px" height="50px">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+

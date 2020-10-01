@@ -1,0 +1,9 @@
+127.0.0.1 - - [17/Jun/2020:16:10:31 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:10:36 +0530] "GET /SpringMvcHibernate/ HTTP/1.1" 404 1097
+127.0.0.1 - - [17/Jun/2020:16:26:29 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:26:33 +0530] "GET /SpringMvcHibernate/ HTTP/1.1" 200 2471
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:26:36 +0530] "GET /SpringMvcHibernate/script/validation.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:26:36 +0530] "GET /SpringMvcHibernate/script/custom.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:26:43 +0530] "GET /SpringMvcHibernate/registration HTTP/1.1" 200 10980
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:27:05 +0530] "POST /SpringMvcHibernate/emailexist HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2020:16:27:43 +0530] "POST /SpringMvcHibernate/save HTTP/1.1" 200 11094

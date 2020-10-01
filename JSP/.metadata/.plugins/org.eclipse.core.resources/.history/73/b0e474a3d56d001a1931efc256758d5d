@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<organisation>
+	<company>
+		<emp>
+			<name>Rajan Singh</name>
+			<designation>Bussiness Developer</designation>
+			<mentor>40</mentor>
+		</emp>
+
+		<emp>
+			<name>Supriya Gaur</name>
+			<designation>HR Executive</designation>
+			<mentor>22</mentor>
+		</emp>
+	</company>
+
+	<company>
+		<emp>
+			<name>Shashnak Singhal</name>
+			<designation>Sr. Java Programmer</designation>
+			<mentor>26</mentor>
+		</emp>
+
+		<emp>
+			<name>Hemant Kishor</name>
+			<designation>Sr. PHP Programmer</designation>
+			<mentor>23</mentor>
+		</emp>
+	</company>
+</organisation>  

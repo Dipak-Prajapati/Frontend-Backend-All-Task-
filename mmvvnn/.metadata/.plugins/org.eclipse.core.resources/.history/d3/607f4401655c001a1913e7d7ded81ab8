@@ -1,0 +1,14 @@
+package com.maventest;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void call()
+    {
+        System.out.println( "call From Mytest2 java File" );
+    	
+    }
+}

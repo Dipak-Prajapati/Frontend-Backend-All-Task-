@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>Archetype Created Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>indexTest.html</welcome-file>
+		<welcome-file>indexTest.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>staticLogin</servlet-name>
+		<servlet-class>servletPracticePackage.StaticLogin</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>staticLogin</servlet-name>
+		<url-pattern>/staticLogin</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>goLogin</servlet-name>
+		<servlet-class>servletPracticePackage.WelcomeStaticLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>goLogin</servlet-name>
+		<url-pattern>/go</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>servletPracticePackage.MySeracher</servlet-class>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/MySearcher</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<display-name>ABCD</display-name>
+		<servlet-name>SConfig</servlet-name>
+		<servlet-class>servletPracticePackage.SConfig</servlet-class>
+		<load-on-startup>4</load-on-startup>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Dipak</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>surname</param-name>
+			<param-value>Prajapati</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>Age</param-name>
+			<param-value>20</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SConfig</servlet-name>
+		<url-pattern>/config</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>Global</param-name>
+		<param-value>It's Global Value</param-value>
+	</context-param>
+
+
+	<servlet>
+		<servlet-name>problem</servlet-name>
+		<servlet-class>sessionTracking.Problem</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>problem</servlet-name>
+		<url-pattern>/problemm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cookie</servlet-name>
+		<servlet-class>sessionTracking.Cookie1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cookie</servlet-name>
+		<url-pattern>/cookie1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>hidden</servlet-name>
+		<servlet-class>sessionTracking.HiddenFormField1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hidden</servlet-name>
+		<url-pattern>/hidden</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>hidden1</servlet-name>
+		<servlet-class>sessionTracking.HiddenFormField2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hidden1</servlet-name>
+		<url-pattern>/hidden1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>url</servlet-name>
+		<servlet-class>sessionTracking.UrlRewriting1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url</servlet-name>
+		<url-pattern>/url</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>url1</servlet-name>
+		<servlet-class>sessionTracking.UrlRewriting2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>url1</servlet-name>
+		<url-pattern>/url2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>session1</servlet-name>
+		<servlet-class>sessionTracking.HSession1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>session1</servlet-name>
+		<url-pattern>/session1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>session2</servlet-name>
+		<servlet-class>sessionTracking.HSession2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>session2</servlet-name>
+		<url-pattern>/session2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>fservlet</servlet-name>
+		<servlet-class>filter.FServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fservlet</servlet-name>
+		<url-pattern>/fservlet</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>ffilter2</filter-name>
+		<filter-class>filter.MyFilter2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ffilter2</filter-name>
+		<url-pattern>/fservlet</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>ffilter</filter-name>
+		<filter-class>filter.MyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ffilter</filter-name>
+		<url-pattern>/fservlet</url-pattern>
+	</filter-mapping>
+
+
+
+	<servlet>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>login_logout.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<display-name>ProfileServlet</display-name>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>login_logout.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/ProfileServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>login_logout.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\INEXTURE\Backup SpringMvcHibernateProject\.metadata\.plugins\org.eclipse.jdt.core
+769327296.index

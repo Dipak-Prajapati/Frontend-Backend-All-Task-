@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/btn_change.css">
+	
+</head>
+<body>
+	<p>Player : Dipak</p>
+	<script>
+		const para = document.querySelector('p');
+
+		para.addEventListener('click', updateName);
+
+		function updateName() 
+		{
+			let name = prompt('Enter a new name');
+			para.textContent = 'Player 1: ' + name;
+		}
+	</script>
+</body>
+
+</html>
