@@ -2,9 +2,13 @@ package com.spring.springrest.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +27,9 @@ public class MyController {
 
 	@Autowired
 	private CourseService courseService;
+	
+	@Autowired   
+	private MessageSource messageSource; 
 
 	@GetMapping("/test")
 	public String show() {
@@ -55,8 +62,19 @@ public class MyController {
 	}
 
 	@PostMapping("/Course")
-	public Course addCourse(@RequestBody CourseDto courseDto) {
+	public Course addCourse(@Valid @RequestBody CourseDto courseDto) {
+		
+		//,BindingResult result
+/*		System.out.println(result.getFieldError());
+		System.out.println("haserror : "+result.hasErrors());
+		if(result.hasErrors())
+		{
+			System.out.println("In HasError :" + result.hasErrors());
+			return (Course) result;
+		}*/
 		return courseService.addCourse(courseDto);
+		
+		//return messageSource.getMessage(courseService.addCourse(courseDto), null, locale);
 	}
 
 	@PutMapping("/Course")
