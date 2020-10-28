@@ -56,9 +56,5 @@ public class CourseDto {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-	
-	
-
-	
+	}	
 }
