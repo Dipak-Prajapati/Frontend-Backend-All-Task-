@@ -14,7 +14,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.7.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -59,14 +59,14 @@
 		<dependency>
 			<groupId>com.konghq</groupId>
 			<artifactId>unirest-java</artifactId>
-			<version>3.7.04</version>
+			<version>3.11.01</version>
 		</dependency>
 
 		<!-- OR as a snazzy new standalone jar with shaded dependencies -->
 		<dependency>
 			<groupId>com.konghq</groupId>
 			<artifactId>unirest-java</artifactId>
-			<version>3.7.04</version>
+			<version>3.11.01</version>
 			<classifier>standalone</classifier>
 		</dependency>
 
